@@ -6,3 +6,7 @@
   background-color: #ffffff;
   font-family: "Roboto, 'Courier New', monospace";
 }
+
+h1 {
+  @apply font-bold;
+}

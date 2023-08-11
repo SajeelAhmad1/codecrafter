@@ -31,7 +31,6 @@ const Ch1 = () => {
                 </button>
               </Link>
               <br />
-              
             </h2>
 
             <div class="main-body ui segment">
@@ -245,32 +244,30 @@ const Ch1 = () => {
               </div>
             </div>
             <button
+              class="ui primary button"
+              style={{ flex: 1, minWidth: "100px", height: "40px" }}
+            >
+              Previous
+            </button>
+            <Link to="/tutorials/Chapter2">
+              <button
                 class="ui primary button"
-                style={{ flex: 1, minWidth: "100px", height: "40px" }}
+                style={{
+                  flex: 1,
+                  minWidth: "100px",
+                  height: "40px",
+                  float: "right",
+                }}
               >
-                Previous
+                <span> Next</span>
               </button>
-              <Link to="/tutorials/Chapter2">
-                <button
-                  class="ui primary button"
-                  style={{
-                    flex: 1,
-                    minWidth: "100px",
-                    height: "40px",
-                    float: "right",
-                  }}
-                >
-                  <span> Next</span>
-                </button>
-              </Link>
+            </Link>
             <br />
           </div>
         </div>
       </Sidebar>
 
-      
-        <Footer />
-      
+      <Footer />
     </>
   );
 };
