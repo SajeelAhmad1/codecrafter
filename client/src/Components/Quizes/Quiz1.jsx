@@ -7,7 +7,7 @@ import "./Quiz.css";
 import "../Chapters/Chapters.css";
 import Modal from "react-modal";
 
-const Quiz5 = () => {
+const Quiz1 = () => {
   const [answers, setAnswers] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -104,16 +104,18 @@ const Quiz5 = () => {
                 </button>
               </Link>
               <br />
-              <span class="start content">
-              Introduction to C++</span>
+              <span class="start content">Introduction to C++</span>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-              Quiz # 1
-              </h2><span class="tut-btn"><Link to="/tutorials/Chapter1">
+                Quiz # 1
+              </h2>
+              <span class="tut-btn">
+                <Link to="/tutorials/Chapter1">
                   <button class="ui secondary button">Read Tutorial</button>
-                </Link></span>
+                </Link>
+              </span>
               <div class="ui clearing divider"></div>
               <div>
                 {questions.map((question, i) => (
@@ -223,4 +225,4 @@ const Quiz5 = () => {
     </>
   );
 };
-export default Quiz5;
+export default Quiz1;

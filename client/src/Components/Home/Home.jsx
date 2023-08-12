@@ -14,7 +14,7 @@ const Home = () => {
       <AboutHome />
       <Cpp />
       <Testimonial />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

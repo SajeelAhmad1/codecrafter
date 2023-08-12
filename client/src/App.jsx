@@ -1,24 +1,21 @@
-import React from 'react'
-import Home from './Components/Home/Home'
-import { Route, Routes } from 'react-router-dom'
-import Ch1 from './Components/Chapters/Ch1.jsx'
-import Ch2 from './Components/Chapters/Ch2.jsx'
-import Ch3 from './Components/Chapters/Ch3.jsx'
-import Ch4 from './Components/Chapters/Ch4.jsx'
-import Ch5 from './Components/Chapters/Ch5.jsx'
-import Ch6 from './Components/Chapters/Ch6.jsx'
-import Ch7 from './Components/Chapters/Ch7.jsx'
-import Header from './Components/Home/NewHeader'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-import Projects from './Components/Projects/Projects.jsx';
-import CppatGlance from './Components/CppatGlance/CppatGlance.jsx';
-import Quiz1 from './Components/Quizes/Quiz1'
-import Quiz2 from './Components/Quizes/Quiz2'
-import Quiz3 from './Components/Quizes/Quiz3'
-import Quiz4 from './Components/Quizes/Quiz4'
-import Quiz5 from './Components/Quizes/Quiz5'
-import Quiz6 from './Components/Quizes/Quiz6'
-import Quiz7 from './Components/Quizes/Quiz7'
+import Home from "./Components/Home/Home";
+import Header from "./Components/Home/NewHeader";
+import Projects from "./Components/Projects/Projects.jsx";
+import CppatGlance from "./Components/CppatGlance/CppatGlance.jsx";
+import { Ch1, Ch2, Ch3, Ch4, Ch5, Ch6, Ch7 } from "./Components/Chapters";
+import {
+  Quiz1,
+  Quiz2,
+  Quiz3,
+  Quiz4,
+  Quiz5,
+  Quiz6,
+  Quiz7,
+} from "./Components/Quizes";
+import { Error404 } from "./pages";
 
 const App = () => {
   return (
@@ -26,7 +23,7 @@ const App = () => {
       <Header />
 
       <Routes>
-        <Route path='/tutorials' element={<Ch1 />} />
+        <Route path="/tutorials" element={<Ch1 />} />
         <Route path="/tutorials/Chapter1" element={<Ch1 />} />
         <Route path="/tutorials/Chapter2" element={<Ch2 />} />
         <Route path="/tutorials/Chapter3" element={<Ch3 />} />
@@ -35,8 +32,8 @@ const App = () => {
         <Route path="/tutorials/Chapter6" element={<Ch6 />} />
         <Route path="/tutorials/Chapter7" element={<Ch7 />} />
 
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/cppatglance" element={<CppatGlance />} />
         <Route path="/quizes" element={<Quiz1 />} />
         <Route path="/quizes/quiz1" element={<Quiz1 />} />
@@ -47,10 +44,9 @@ const App = () => {
         <Route path="/quizes/quiz6" element={<Quiz6 />} />
         <Route path="/quizes/quiz7" element={<Quiz7 />} />
 
+        <Route path="*" element={<Error404 />} />
       </Routes>
-
-
     </>
-  )
-}
+  );
+};
 export default App;
