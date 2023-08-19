@@ -1,21 +1,18 @@
 import React from "react";
-import Footer from "./Footer";
 import Intro from "./Intro";
 import Testimonial from "./Testimonial";
 import AboutHome from "./AboutHome";
-import Cpp from "./CodeExamples/Cpp";
-import Header from "./Header";
+import { CodeExample } from "../../Components";
 
 const Home = () => {
   return (
-    <div class="home">
-      {/* <div style={{marginTop:'0%'}}><img src='images/bg.png' alt='img'/></div> */}
+    <div className="px-4 md:px-8">
       <Intro />
       <AboutHome />
-      <Cpp />
+      <CodeExample />
       <Testimonial />
-      <Footer />
     </div>
   );
 };
+
 export default Home;

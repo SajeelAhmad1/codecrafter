@@ -1,5 +1,9 @@
+import Header from "./Header";
 import Footer from "./Footer";
 
+import CodeExample from "./CodeExample";
+
 export {
-    Footer
+    Header, Footer,
+    CodeExample,
 }

@@ -1,11 +1,7 @@
-// import { useRef } from "react";
-import Footer from "../Home/Footer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
 
-const CppatGlance = () => {
+const CppAtGlance = () => {
   const code1 = `#include <iostream>
 using namespace std;
 
@@ -464,250 +460,242 @@ className clasName{
 };`;
 
   return (
-    <>
-      <div className="my-40 sm:my-24 md:my-20">
-        <div className="text-lg w-4/5 mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">C++ at Glance</h2>
-          <div>
-            <h1>Basic Syntax</h1>
-            <div>Basic syntax for a C++ code: </div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code1}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>cout</h1>
-            <div>
-              cout along with insertion operator is used to print on console.{" "}
-            </div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code2}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>cin</h1>
-            <div>
-              cin along with extraction operator is used to take input from
-              user.{" "}
-            </div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code3}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Comments</h1>
-            <div>
-              Comments are used to make your code more readable. Everything in
-              comments are ignored by the compiler.
-            </div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code4}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Escape Sequences</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code17}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Variables</h1>
-            <div>Variables are used to store data of specified data type.</div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code5}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Data Types</h1>
-            <div>
-              Data type specifies the type of data, stored in a variable.
-            </div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code6}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>String and its methods</h1>
-            <div>Strings are sequence of characters.</div>
-            <div>
-              <SyntaxHighlighter language="cpp">{code7}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Operators</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code8}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Conditional statements</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code9}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Switch Statements</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code10}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Loops</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code11}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Continue And Break Statements</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code16}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Arrays</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code12}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Structures and Unions</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code13}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Pointers</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code14}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Functions</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code15}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Built-in Functions</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code18}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>
-              Object Oriented Programming <br /> Classes and Objects
-            </h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code19}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Constructors and destructors</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code20}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Friend Functions</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code21}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Friend Classes</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code22}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Encapsulation</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code23}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Inheritance</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code24}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Polymorphism</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code25}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Abstraction</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code26}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Exceptions</h1>
-
-            <div>
-              <SyntaxHighlighter language="cpp">{code27}</SyntaxHighlighter>
-            </div>
-          </div>
-
-          <div>
-            <h1>Exception Templates</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code27}</SyntaxHighlighter>
-            </div>
-          </div>
-          <div>
-            <h1>Function Templates</h1>
-            <div>
-              <SyntaxHighlighter language="cpp">{code28}</SyntaxHighlighter>
-            </div>
-          </div>
+    <div className="text-lg px-4 md:w-4/5 mx-auto pt-4">
+      <h2 className="text-3xl font-bold mb-8 text-center">C++ at Glance</h2>
+      <div>
+        <h1>Basic Syntax</h1>
+        <div>Basic syntax for a C++ code: </div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code1}</SyntaxHighlighter>
         </div>
       </div>
-      <Footer />
-    </>
+
+      <div>
+        <h1>cout</h1>
+        <div>
+          cout along with insertion operator is used to print on console.{" "}
+        </div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code2}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>cin</h1>
+        <div>
+          cin along with extraction operator is used to take input from user.{" "}
+        </div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code3}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Comments</h1>
+        <div>
+          Comments are used to make your code more readable. Everything in
+          comments are ignored by the compiler.
+        </div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code4}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Escape Sequences</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code17}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Variables</h1>
+        <div>Variables are used to store data of specified data type.</div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code5}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Data Types</h1>
+        <div>Data type specifies the type of data, stored in a variable.</div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code6}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>String and its methods</h1>
+        <div>Strings are sequence of characters.</div>
+        <div>
+          <SyntaxHighlighter language="cpp">{code7}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Operators</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code8}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Conditional statements</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code9}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Switch Statements</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code10}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Loops</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code11}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Continue And Break Statements</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code16}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Arrays</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code12}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Structures and Unions</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code13}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Pointers</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code14}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Functions</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code15}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Built-in Functions</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code18}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>
+          Object Oriented Programming <br /> Classes and Objects
+        </h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code19}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Constructors and destructors</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code20}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Friend Functions</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code21}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Friend Classes</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code22}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Encapsulation</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code23}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Inheritance</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code24}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Polymorphism</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code25}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Abstraction</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code26}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Exceptions</h1>
+
+        <div>
+          <SyntaxHighlighter language="cpp">{code27}</SyntaxHighlighter>
+        </div>
+      </div>
+
+      <div>
+        <h1>Exception Templates</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code27}</SyntaxHighlighter>
+        </div>
+      </div>
+      <div>
+        <h1>Function Templates</h1>
+        <div>
+          <SyntaxHighlighter language="cpp">{code28}</SyntaxHighlighter>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default CppatGlance;
+export default CppAtGlance;

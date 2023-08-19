@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
-import Header from "./Components/Home/Header";
-import CppatGlance from "./Components/CppatGlance/CppatGlance.jsx";
+import { Header, Footer } from "./Components";
+import { CppAtGlance } from "./pages";
 import { Ch1, Ch2, Ch3, Ch4, Ch5, Ch6, Ch7 } from "./Components/Chapters";
 import {
   Quiz1,
@@ -33,7 +33,7 @@ const App = () => {
 
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/cppatglance" element={<CppatGlance />} />
+        <Route path="/cppatglance" element={<CppAtGlance />} />
         <Route path="/quizes" element={<Quiz1 />} />
         <Route path="/quizes/quiz1" element={<Quiz1 />} />
         <Route path="/quizes/quiz2" element={<Quiz2 />} />
@@ -45,6 +45,8 @@ const App = () => {
 
         <Route path="*" element={<Error404 />} />
       </Routes>
+
+      <Footer />
     </>
   );
 };

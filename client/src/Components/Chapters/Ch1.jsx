@@ -1,7 +1,6 @@
 import React from "react";
 import "./Chapters.css";
 import Sidebar from "../SideBar/Sidebar";
-import Footer from "../Home/Footer";
 import { Link } from "react-router-dom";
 
 const Ch1 = () => {
@@ -266,8 +265,6 @@ const Ch1 = () => {
           </div>
         </div>
       </Sidebar>
-
-      <Footer />
     </>
   );
 };
