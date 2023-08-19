@@ -9,7 +9,7 @@ const AboutHome = () => {
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               <b>What we are offering?</b>
             </h1>
-            <p className="lg:w-2/3 text-xl mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 text-xl mx-auto leading-relaxed">
               Strengthen your coding skills with hands-on exercises, test your
               understanding with engaging quizzes, and apply your knowledge to
               real-world scenarios through our stimulating coding projects.

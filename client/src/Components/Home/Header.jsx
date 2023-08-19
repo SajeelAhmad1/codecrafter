@@ -33,17 +33,17 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div class="ui vertical divider">
-          Or
-        </div>
+        <div class="ui vertical divider">Or</div>
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <nav className="bg-[#222222] w-full fixed top-0 z-50 p-5 flex flex-col sm:flex-row gap-2 justify-between items-center">
       <div className="text-white w-full flex justify-center sm:justify-normal">
-        <Link to='/' className="text-2xl font-bold">CodeCrafter</Link>
+        <Link to="/" className="text-2xl font-bold">
+          CodeCrafter
+        </Link>
       </div>
       <div className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-center sm:justify-end w-full gap-4">
         <div className="text-white text-center sm:text-left text-xl">

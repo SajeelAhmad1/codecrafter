@@ -2,8 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
-import Header from "./Components/Home/NewHeader";
-import Projects from "./Components/Projects/Projects.jsx";
+import Header from "./Components/Home/Header";
 import CppatGlance from "./Components/CppatGlance/CppatGlance.jsx";
 import { Ch1, Ch2, Ch3, Ch4, Ch5, Ch6, Ch7 } from "./Components/Chapters";
 import {
@@ -15,7 +14,7 @@ import {
   Quiz6,
   Quiz7,
 } from "./Components/Quizes";
-import { Error404 } from "./pages";
+import { Projects, Error404 } from "./pages";
 
 const App = () => {
   return (

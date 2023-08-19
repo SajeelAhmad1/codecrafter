@@ -1,5 +1,5 @@
-import projectData from "./projectAPI";
-import Footer from "../Home/Footer";
+import { projectData } from "../services";
+import { Footer } from "../Components";
 
 const Projects = () => {
   const Games = projectData.map((game, index) => {

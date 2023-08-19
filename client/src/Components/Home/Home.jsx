@@ -4,7 +4,7 @@ import Intro from "./Intro";
 import Testimonial from "./Testimonial";
 import AboutHome from "./AboutHome";
 import Cpp from "./CodeExamples/Cpp";
-import Header from "./NewHeader";
+import Header from "./Header";
 
 const Home = () => {
   return (
