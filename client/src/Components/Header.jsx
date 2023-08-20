@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { IoCloseOutline } from "react-icons/io5";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
           onClick={() => setNav((prev) => !prev)}
           className="visible md:hidden"
         >
-          <HiOutlineMenuAlt3 />
+          {!nav ? <HiOutlineMenuAlt3 /> : <IoCloseOutline />}
         </button>
         <div
           className={`justify-evenly gap-4 hidden md:flex items-center font-normal text-xl h-16`}
@@ -48,7 +49,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`flex justify-evenly pb-4 md:hidden ${
+        className={`flex justify-evenly flex-wrap pb-4 md:hidden ${
           nav ? null : "hidden"
         }`}
       >

@@ -12,10 +12,10 @@ int main() {
 }`;
 
   return (
-    <div className="flex flex-col md:flex-row justify-between">
+    <div className="flex flex-col md:flex-row justify-between my-4">
       <div className="md:w-1/3 my-auto px-0 mx-auto">
         <h3 className="font-bold text-2xl">C++</h3>
-        <p>
+        <p className="text-grey-800">
           A robust programming language renowned for its high performance and
           wide-ranging applications.
         </p>

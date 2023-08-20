@@ -1,9 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./Components/Home/Home";
 import { Header, Footer } from "./Components";
-import { CppAtGlance } from "./pages";
 import { Ch1, Ch2, Ch3, Ch4, Ch5, Ch6, Ch7 } from "./Components/Chapters";
 import {
   Quiz1,
@@ -14,7 +12,7 @@ import {
   Quiz6,
   Quiz7,
 } from "./Components/Quizes";
-import { Projects, Error404 } from "./pages";
+import { Home, CppAtGlance, Projects, Error404 } from "./pages";
 
 const App = () => {
   return (

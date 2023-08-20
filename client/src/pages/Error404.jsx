@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Components/Home/Footer";
+import { Footer } from "../Components";
 import { Link } from "react-router-dom";
 
 const Error404 = () => {

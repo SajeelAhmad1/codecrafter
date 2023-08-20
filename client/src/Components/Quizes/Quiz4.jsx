@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../Chapters/Chapters.css";
 import Sidebar from "./SideBar";
-import Footer from "../Home/Footer";
 import { Link } from "react-router-dom";
 import "./Quiz.css";
 import "../Chapters/Chapters.css";
@@ -209,10 +208,6 @@ const Quiz4 = () => {
           </div>
         </div>
       </Sidebar>
-
-      <div class="sideBarBody">
-        <Footer />
-      </div>
     </>
   );
 };
